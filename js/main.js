@@ -8,7 +8,7 @@ const list = document.querySelector('.list-group')
 function AddItem(e) {
     e.preventDefault()
     const item = document.createElement('li')
-    item.className = 'list-group-item p-3'
+    item.className = 'list-group-item p-3 mt-4 mb-4 me-4 ms-4'  
     item.textContent = 'Name:' + username.value.trim() +' '+'Order:'+ userOrder.value.trim() +' '+'Email:'+ userEmail.value
     list.append(item)
     if (username.value.trim() && userOrder.value.trim()){
